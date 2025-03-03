@@ -1,12 +1,13 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
 
 :root {
   font-family: Saira Extra Condensed, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: white;
-  background-color: #242424;
+  color: black;
+  background-color: #f1f1f1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +25,10 @@ button {
   border-radius: 99px;
   border: 1px solid transparent;
   padding: 5px 15px;
-  font-size: 1em;
   font-weight: 500;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: ease-in;
+  transition-duration: 0.4s;
 }
 button:active {
   scale: 0.98;
