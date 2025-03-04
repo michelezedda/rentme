@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { CarFront, Truck, Earth, CircleUser } from "lucide-react";
+import { LuCircleUserRound } from "react-icons/lu";
+import { FaCarRear } from "react-icons/fa6";
+import { IoEarth } from "react-icons/io5";
+import { BsTruckFrontFill } from "react-icons/bs";
 
 function Navbar() {
   const [isCarsSelected, setIsCarsSelected] = useState(true);
@@ -44,13 +47,13 @@ function Navbar() {
           <span className="text-4xl font-bold text-orange-600">RentMe</span>
           <ul className="flex gap-4 py-1 items-center text-white">
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
-              <CarFront />
+              <FaCarRear className="size-5.5" />
             </li>
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
-              <Earth />
+              <IoEarth className="size-6" />
             </li>
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
-              <CircleUser />
+              <LuCircleUserRound className="size-6" />
             </li>
           </ul>
         </div>
@@ -64,7 +67,7 @@ function Navbar() {
               }`}
               onClick={handleSelected}
             >
-              <CarFront />
+              <FaCarRear />
               Cars
             </button>
             <button
@@ -75,7 +78,7 @@ function Navbar() {
               }`}
               onClick={handleSelected}
             >
-              <Truck />
+              <BsTruckFrontFill />
               Trucks
             </button>
           </div>

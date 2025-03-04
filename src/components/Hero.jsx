@@ -1,21 +1,23 @@
-import { CarFront, Earth, HandHeart } from "lucide-react";
+import { FaCarRear } from "react-icons/fa6";
+import { IoEarth } from "react-icons/io5";
+import { PiHandHeartBold } from "react-icons/pi";
 
 function Hero() {
   return (
     <>
       <div className="flex flex-col mt-15">
         <div className="place-items-center">
-          <Earth size={35} />
+          <IoEarth className="size-8.5" />
           <h3 className="text-4xl font-semibold">GLOBAL REACH</h3>
           <p className="text-2xl">2,000+ SIXT stations in over 105 countries</p>
         </div>
         <div className="place-items-center mt-10">
-          <CarFront size={35} />
+          <FaCarRear className="size-8" />
           <h3 className="text-4xl font-semibold">DISTINCTIVE FLEET</h3>
           <p className="text-2xl">From high-end convertibles to premium SUVs</p>
         </div>
         <div className="place-items-center mt-10">
-          <HandHeart size={35} />
+          <PiHandHeartBold className="size-9.5" />
           <h3 className="text-4xl font-semibold">EXCEPTIONAL SERVICE</h3>
           <p className="text-2xl">Stress-free, trustworthy, no hidden costs</p>
         </div>
