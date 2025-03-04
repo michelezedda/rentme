@@ -10,7 +10,7 @@ function Home() {
     <>
       <Navbar />
       <Header />
-      <div className="container mx-auto px-4 max-w-screen-lg">
+      <div className="container mx-auto lg:px-4 max-w-screen-lg">
         <Hero />
         <Vehicles />
         <Reviews />

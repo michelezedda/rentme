@@ -8,7 +8,7 @@ function Vehicles() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-2 mt-15">
+      <div className="flex flex-col items-center gap-2 mt-15 bg-neutral-700 text-white px-4">
         {/* Cars */}
         <h2 className="text-6xl my-6 text-center font-semibold">
           THE PERFECT CAR FOR YOUR NEXT TRIP

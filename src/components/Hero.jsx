@@ -20,7 +20,7 @@ function Hero() {
           <p className="text-2xl">Stress-free, trustworthy, no hidden costs</p>
         </div>
       </div>
-      <div className="mt-15">
+      <div className="mt-15 mx-4">
         <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero1.png')] bg-center after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white cursor-pointer">
           <div className="absolute bottom-30 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
             <span className="text-4xl font font-bold">

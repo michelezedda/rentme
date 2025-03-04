@@ -34,13 +34,13 @@ function Navbar() {
   return (
     <>
       <div
-        className={`fixed mx-6 w-full transition-opacity duration-200 ${
+        className={`fixed left-0 right-0 mx-6 w-full transition-opacity duration-200 ${
           isSelectionVisible
             ? "motion-translate-y-in-100"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex justify-between py-1 px-2 w-[90%]">
+        <div className="flex justify-between py-1 pl-2 pr-16">
           <span className="text-4xl font-bold text-orange-600">RentMe</span>
           <ul className="flex gap-4 py-1 items-center text-white">
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
