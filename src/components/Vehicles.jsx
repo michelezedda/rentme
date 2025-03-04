@@ -8,9 +8,11 @@ function Vehicles() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 mt-15">
         {/* Cars */}
-        <h2 className="text-4xl my-6 text-center">OUR CARS</h2>
+        <h2 className="text-6xl my-6 text-center font-semibold">
+          THE PERFECT CAR FOR YOUR NEXT TRIP
+        </h2>
         <Splide
           options={{
             perMove: 1,
@@ -29,7 +31,9 @@ function Vehicles() {
           ))}
         </Splide>
         {/* Trucks */}
-        <h2 className="text-4xl my-6 text-center">OUR TRUCKS</h2>
+        <h2 className="text-6xl my-6 text-center font-semibold">
+          OR TRUCK FOR ANY JOB, ANYWHERE
+        </h2>
         <Splide
           options={{
             perMove: 1,

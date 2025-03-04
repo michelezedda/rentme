@@ -3,7 +3,7 @@ import { Weight, UsersRound, Luggage } from "lucide-react";
 function VehicleCard({ brand, name, img, kg, suitcases, seats, price }) {
   return (
     <>
-      <div className="flex flex-col relative bg-linear-to-b from-white to-amber-700 border-4 border-black text-black rounded-2xl p-4 gap-4 w-100 h-100 justify-evenly cursor-pointer">
+      <div className="flex flex-col relative bg-linear-to-b from-white to-orange-700 border-3 border-black text-black rounded-2xl p-4 gap-4 w-100 h-100 justify-evenly cursor-pointer">
         <div className="flex absolute top-10 items-end gap-2">
           <h3 className="text-4xl font-semibold">
             {brand.toUpperCase()} {name}
