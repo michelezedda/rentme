@@ -35,8 +35,8 @@ function VehicleCard({
           }`}
           onClick={handleClick}
         >
-          <div className="flex absolute top-5 left-16 items-end gap-2 duration-500">
-            <h3 className="text-4xl font-semibold">
+          <div className="flex absolute top-5 left-10 items-end gap-2 duration-500">
+            <h3 className="text-3xl font-semibold">
               {brand.toUpperCase()} {name}
             </h3>
             <p className="text-2xl pb-[1px]">or similar</p>
@@ -126,7 +126,7 @@ function VehicleCard({
               {suitcases ? (
                 <>
                   <BsFillLuggageFill className="size-5.5" />
-                  {suitcases}
+                  {suitcases + bags}
                 </>
               ) : (
                 <>
