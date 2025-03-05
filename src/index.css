@@ -7,7 +7,14 @@
   font-weight: 400;
 
   color: black;
-  background-color: #2b2a2a;
+  background: radial-gradient(
+    circle,
+    rgba(21, 25, 28, 1) 0%,
+    rgba(182, 195, 202, 1) 50%,
+    rgba(21, 25, 28, 1) 100%
+  );
+
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,4 +43,15 @@ button:active {
 li {
   font-size: 20px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    background: linear-gradient(
+      90deg,
+      rgba(21, 25, 28, 1) 0%,
+      rgba(21, 25, 28, 1) 0%,
+      rgba(182, 195, 202, 1) 100%
+    );
+  }
 }

@@ -8,7 +8,7 @@ function Vehicles() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-2 bg-linear-to-b from-neutral-300 to-neutral-950 text-white px-4 py-20">
+      <div className="flex flex-col items-center gap-2 bg-linear-to-b from-neutral-300 to-neutral-950 text-white px-4 py-10">
         {/* Cars */}
         <h2 className="text-6xl my-6 text-center font-semibold">
           THE PERFECT CAR FOR YOUR NEXT TRIP
@@ -21,7 +21,7 @@ function Vehicles() {
               pagination: false,
               arrows: false,
               type: "loop",
-              fixedWidth: "472px",
+              fixedWidth: "358px",
             }}
           >
             {cars.map((car) => (
@@ -45,13 +45,13 @@ function Vehicles() {
               pagination: false,
               arrows: false,
               type: "loop",
-              fixedWidth: "472px",
+              fixedWidth: "358px",
             }}
           >
-            {cars.map((car) => (
-              <SplideSlide key={car.id}>
+            {trucks.map((truck) => (
+              <SplideSlide key={truck.id}>
                 <div className="flex justify-center">
-                  <VehicleCard {...car} />
+                  <VehicleCard {...truck} />
                 </div>
               </SplideSlide>
             ))}

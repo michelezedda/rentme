@@ -35,7 +35,7 @@ function VehicleCard({
           }`}
           onClick={handleClick}
         >
-          <div className="flex absolute top-5 left-25 items-end gap-2 duration-500">
+          <div className="flex absolute top-5 left-16 items-end gap-2 duration-500">
             <h3 className="text-4xl font-semibold">
               {brand.toUpperCase()} {name}
             </h3>
@@ -43,17 +43,17 @@ function VehicleCard({
           </div>
 
           <div className="absolute top-18 left-5 flex gap-2 duration-500">
-            <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
+            <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 py-1 gap-2">
               <FaUser className="size-4" />
               {seats} seats
             </span>
             {bags ? (
-              <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
+              <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
                 <FaBagShopping className="size-4" />
                 {bags} {bags > 1 ? "bags" : "bag"}
               </span>
             ) : null}
-            <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
+            <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
               {suitcases ? (
                 <>
                   <MdLuggage className="size-5.5" />
@@ -67,20 +67,20 @@ function VehicleCard({
               )}
             </span>
             {isElectric ? (
-              <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
+              <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2">
                 <MdElectricBolt className="text-blue-700 size-6 animate-pulse" />
               </span>
             ) : null}
             <div className="absolute top-10 flex gap-2 duration-500">
-              <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-23">
+              <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-21">
                 <GiCarDoor className="size-5" />
                 {doors} doors
               </span>
-              <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-33">
+              <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-29">
                 <FaIdCard className="size-5" />
                 Minum age: {minAge}
               </span>
-              <span className="flex text-lg bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-26">
+              <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 gap-2 h-7 w-23">
                 {isManual ? (
                   <>
                     <TbManualGearboxFilled /> Manual
@@ -96,9 +96,9 @@ function VehicleCard({
           <img
             src={img}
             alt={name}
-            className="absolute -bottom-4 left-0 duration-500"
+            className="absolute -bottom-0 left-0 duration-500"
           />
-          <p className="absolute bottom-42 left-29 text-white text-3xl duration-500">
+          <p className="absolute bottom-42 left-25 text-white text-3xl duration-500">
             <span className="text-6xl font-semibold">$ {price}</span> /day
           </p>
         </div>

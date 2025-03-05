@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <div className="bg-neutral-300 py-15">
-        <div className="flex flex-col md:flex-row px-6">
+        <div className="flex flex-col md:flex-row px-6 md:gap-8">
           <div className="justify-center items-center place-items-center text-center">
             <IoEarth className="size-8.5" />
             <h3 className="text-4xl font-semibold">GLOBAL REACH</h3>
@@ -44,7 +44,7 @@ function Hero() {
             </p>
           </div>
           <div className="relative h-150 md:h-100 rounded-4xl bg-[url('../public/media/hero2.png')] bg-center bg-cover after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white my-6 cursor-pointer">
-            <div className="absolute bottom-30 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
+            <div className="absolute bottom-40 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
               <span className="text-4xl font font-bold">
                 from $789 <br /> /MONTH
               </span>
@@ -52,7 +52,7 @@ function Hero() {
             <h3 className="absolute bottom-18 left-8 font-semibold z-1 text-4xl">
               STOP OWNING, START SUBSCRIBING
             </h3>
-            <p className="absolute bottom-12 left-8 z-1 text-xl">
+            <p className="absolute bottom-5 left-8 z-1 text-xl">
               No hassle, no long-term commitment. Subscribe and drive flexibly!
             </p>
           </div>
