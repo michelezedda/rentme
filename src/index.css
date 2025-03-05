@@ -47,11 +47,5 @@ li {
 
 @media only screen and (max-width: 1200px) {
   :root {
-    background: linear-gradient(
-      90deg,
-      rgba(21, 25, 28, 1) 0%,
-      rgba(21, 25, 28, 1) 0%,
-      rgba(182, 195, 202, 1) 100%
-    );
-  }
+    background-color: black; 
 }
