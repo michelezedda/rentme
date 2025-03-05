@@ -104,8 +104,10 @@ function VehicleCard({
         </div>
       ) : (
         <div
-          className={`flex flex-col relative mb-8 bg-linear-to-b border-3 border-white text-black rounded-2xl p-4 gap-4 w-100 h-100 justify-evenly cursor-pointer ${
-            isElectric ? "from-white to-blue-700" : "from-white to-orange-700"
+          className={`flex flex-col relative mb-8 bg-linear-to-bl border-3 border-white text-black rounded-2xl p-4 gap-4 w-100 h-100 justify-evenly cursor-pointer ${
+            isElectric
+              ? "from-white via-blue-300 to-blue-700"
+              : "from-white via-orange-300 to-orange-700"
           }`}
           onClick={handleClick}
         >
