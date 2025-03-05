@@ -47,5 +47,6 @@ li {
 
 @media only screen and (max-width: 1200px) {
   :root {
-    background-color: black; 
+    background-color: black;
+  }
 }
