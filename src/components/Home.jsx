@@ -8,14 +8,14 @@ import Footer from "./Footer";
 function Home() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <div className="container mx-auto lg:px-4 max-w-screen-lg">
+      <div className="container mx-auto max-w-screen-lg">
+        <Navbar />
+        <Header />
         <Hero />
         <Vehicles />
         <Reviews />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

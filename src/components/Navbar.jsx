@@ -37,13 +37,13 @@ function Navbar() {
   return (
     <>
       <div
-        className={`fixed left-0 right-0 mx-6 w-full transition-opacity duration-200 ${
+        className={`fixed left-0 right-0 max-w-screen-lg lg:px-4 mx-6 lg:mx-auto transition-opacity duration-200 ${
           isSelectionVisible
             ? "motion-translate-y-in-100"
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex justify-between py-1 pl-2 pr-16">
+        <div className="flex justify-between py-1 md:py-2 p-2 placeitem">
           <span className="text-4xl font-bold text-orange-600">RentMe</span>
           <ul className="flex gap-4 py-1 items-center text-white">
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
@@ -57,7 +57,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="mt-2 w-[90%] bg-white rounded-2xl text-black p-4 gap-4">
+        <div className="mt-2 bg-white rounded-2xl text-black p-4 gap-4">
           <div className="flex gap-2">
             <button
               className={`flex text-lg gap-2 place-items-center ${
@@ -90,7 +90,7 @@ function Navbar() {
                   <select
                     name="cars"
                     id="cars"
-                    className="text-center"
+                    className="text-center cursor-pointer"
                     defaultValue=""
                     required
                   >
@@ -112,7 +112,7 @@ function Navbar() {
                   <select
                     name="trucks"
                     id="trucks"
-                    className="text-center"
+                    className="text-center cursor-pointer"
                     defaultValue=""
                     required
                   >
@@ -134,6 +134,7 @@ function Navbar() {
                     type="datetime-local"
                     id="pickup"
                     name="Pick-up"
+                    className="cursor-pointer"
                     required
                   />
                 </div>
@@ -146,6 +147,7 @@ function Navbar() {
                     type="datetime-local"
                     id="return"
                     name="Return"
+                    className="cursor-pointer"
                     required
                   />
                 </div>
