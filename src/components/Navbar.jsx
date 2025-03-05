@@ -60,7 +60,7 @@ function Navbar() {
         <div className="mt-2 w-[90%] bg-white rounded-2xl text-black p-4 gap-4">
           <div className="flex gap-2">
             <button
-              className={`flex gap-2 ${
+              className={`flex text-lg gap-2 place-items-center ${
                 isCarsSelected
                   ? "bg-neutral-800 text-white"
                   : "bg-neutral-200 text-neutral-800"
@@ -71,7 +71,7 @@ function Navbar() {
               Cars
             </button>
             <button
-              className={`flex gap-2 ${
+              className={`flex text-lg gap-2 place-items-center ${
                 isTrucksSelected
                   ? "bg-neutral-800 text-white"
                   : "bg-neutral-200 text-neutral-800"

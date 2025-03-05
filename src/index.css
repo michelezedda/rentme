@@ -32,3 +32,8 @@ button {
 button:active {
   scale: 0.98;
 }
+
+li {
+  font-size: 20px;
+  cursor: pointer;
+}

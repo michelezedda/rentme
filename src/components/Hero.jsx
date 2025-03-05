@@ -23,7 +23,7 @@ function Hero() {
         </div>
       </div>
       <div className="mt-15 mx-4">
-        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero1.png')] bg-center after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white cursor-pointer">
+        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero1.png')] bg-center bg-cover after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white cursor-pointer">
           <div className="absolute bottom-30 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
             <span className="text-4xl font font-bold">
               15% <br /> DISCOUNT
@@ -36,7 +36,7 @@ function Hero() {
             Book now and save up to 15% on luxury vehicles
           </p>
         </div>
-        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero2.png')] bg-center after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white my-6 cursor-pointer">
+        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero2.png')] bg-center bg-cover after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white my-6 cursor-pointer">
           <div className="absolute bottom-30 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
             <span className="text-4xl font font-bold">
               from $789 <br /> /MONTH
@@ -49,7 +49,7 @@ function Hero() {
             No hassle, no long-term commitment. Subscribe and drive flexibly!
           </p>
         </div>
-        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero3.png')] bg-center after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white my-6 cursor-pointer">
+        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero3.png')] bg-center bg-cover after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white my-6 cursor-pointer">
           <div className="absolute bottom-40 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
             <span className="text-4xl font font-bold">
               20% <br /> DISCOUNT
@@ -62,7 +62,7 @@ function Hero() {
             Take advantage of benefits and preferential rates.
           </p>
         </div>
-        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero4.png')] bg-center after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white cursor-pointer">
+        <div className="relative h-150 rounded-4xl bg-[url('../public/media/hero4.png')] bg-center bg-cover after:absolute after:inset-0 after:bg-black/50 after:rounded-4xl text-white cursor-pointer">
           <div className="absolute bottom-40 left-10 z-1 border-white border-2 text-center p-2 -skew-x-10">
             <span className="text-4xl font font-bold">
               15% <br /> DISCOUNT
