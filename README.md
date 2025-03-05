@@ -1,12 +1,27 @@
-# React + Vite
+<h1 align="center">
+  <br>
+  <img src="https://i.ibb.co/Hp9GbW2R/rentme-project.png" alt="RentMe" width="1100">
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2 align="center">RentMe</h2>
 
-Currently, two official plugins are available:
+## Key Features
+- 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **HTML5 & CSS3**: Markup and styling languages for web development.
+- **Tailwind CSS**: CSS extension language for more efficient styling.
+- **Git**: Version control system for tracking changes and collaborating.
+- **React**: JavaScript library for dynamic user interfaces.
+- **Vite**: Front-end dev tool improving developer experience.
+- **react-hot-toast**: A React library for displaying customizable notifications.
+- **Splide**: A JavaScript library for creating responsive and accessible arousels.
+- **Lucide**: An icon library for react applications.
+- **Formik**: A React library for building and managing forms efficiently.
+- **AOS (Animate On Scroll)**: JavaScript library for scroll-based animations.
+- **Motion One**: Lightweight and performant animation library.
+- **Rombo**: A JavaScript library for smooth and performant animations.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Link
+Explore RentMe: :link: [RentMe](https://rentme-demo.vercel.app/)
