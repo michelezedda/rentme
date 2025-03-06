@@ -6,9 +6,12 @@ import { MdLuggage, MdElectricBolt } from "react-icons/md";
 import { GiCarDoor } from "react-icons/gi";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { useState } from "react";
+import Footer from "../components/Footer";
+import Form from "../components/Form";
 
 function Checkout() {
   const { choice } = useAppContext();
+  console.log(choice);
   const [additionalCharges, setAdditionalCharges] = useState({
     additionalDriver: 0,
     crossBorder: 0,
@@ -29,11 +32,13 @@ function Checkout() {
     additionalCharges.gps +
     additionalCharges.skiRack;
 
-  const finalTotal = (choice.price + totalAdditionalCharges).toFixed(2);
+  const finalTotal = (
+    choice.selectedVehicle.price + totalAdditionalCharges
+  ).toFixed(2);
 
   return (
     <>
-      <div className="flex flex-col gap-4 bg-neutral-200 h-[100dvh]">
+      <div className="flex flex-col gap-4 bg-neutral-200 h-full">
         <div className="absolute top-5 left-5">
           <a href="/">
             <IoChevronBackCircleOutline className="size-14 text-white cursor-pointer scale-98 hover:text-orange-600 ease-in-out duration-500" />
@@ -41,22 +46,26 @@ function Checkout() {
         </div>
         <div
           className={`bg-linear-to-bl h-91 ${
-            choice.isElectric
+            choice.selectedVehicle.isElectric
               ? "from-white via-blue-300 to-blue-700"
               : "from-white via-orange-300 to-orange-700"
           } `}
         >
-          <img src={choice.img} alt={choice.brand + choice.name} />
+          <img
+            src={choice.selectedVehicle.img}
+            alt={choice.selectedVehicle.brand + choice.selectedVehicle.name}
+          />
         </div>
         <div className="flex justify-between mx-4">
           <div className="flex items-end gap-2 ">
             <h3 className="text-4xl font-semibold">
-              {choice.brand.toUpperCase()} {choice.name}
+              {choice.selectedVehicle.brand.toUpperCase()}{" "}
+              {choice.selectedVehicle.name}
             </h3>
             <p className="text-2xl pb-[1px]">or similar</p>
           </div>
           <div>
-            {choice.isElectric ? (
+            {choice.selectedVehicle.isElectric ? (
               <span className="flex text-sm bg-neutral-400 rounded-full items-center p-1 gap-2">
                 <MdElectricBolt className="text-blue-700 size-6 animate-pulse" />
               </span>
@@ -67,25 +76,28 @@ function Checkout() {
           <div className="flex flex-col gap-2">
             <span className="flex text-sm gap-2">
               <FaUser className="size-4" />
-              {choice.seats} seats
+              {choice.selectedVehicle.seats} seats
             </span>
-            {choice.bags ? (
+            {choice.selectedVehicle.bags ? (
               <span className="flex text-sm gap-2">
                 <FaBagShopping className="size-4" />
-                {choice.bags} {choice.bags > 1 ? "bags" : "bag"}
+                {choice.selectedVehicle.bags}{" "}
+                {choice.selectedVehicle.bags > 1 ? "bags" : "bag"}
               </span>
             ) : null}
             <span className="flex text-sm gap-1">
-              {choice.suitcases ? (
+              {choice.selectedVehicle.suitcases ? (
                 <>
                   <MdLuggage className="size-5" />
-                  {choice.suitcases}{" "}
-                  {choice.suitcases > 1 ? "suitcases" : "suitcase"}
+                  {choice.selectedVehicle.suitcases}{" "}
+                  {choice.selectedVehicle.suitcases > 1
+                    ? "suitcases"
+                    : "suitcase"}
                 </>
               ) : (
                 <>
                   <FaWeightHanging className="size-3.5" />
-                  {choice.kg} kg
+                  {choice.selectedVehicle.kg} kg
                 </>
               )}
             </span>
@@ -93,14 +105,15 @@ function Checkout() {
           <div className="flex flex-col gap-2">
             <span className="flex text-sm gap-1.5">
               <GiCarDoor className="size-4.5" />
-              {choice.doors} doors
+              {choice.selectedVehicle.doors} doors
             </span>
             <span className="flex text-sm gap-2">
               <FaIdCard className="size-4.5" />
-              Minimum age of the youngest driver: {choice.minAge}
+              Minimum age of the youngest driver:{" "}
+              {choice.selectedVehicle.minAge}
             </span>
             <span className="flex text-sm gap-1.5">
-              {choice.isManual ? (
+              {choice.selectedVehicle.isManual ? (
                 <>
                   <TbManualGearboxFilled /> Manual
                 </>
@@ -115,7 +128,9 @@ function Checkout() {
         <div className="flex justify-between place-items-center px-8 text-2xl">
           Price{" "}
           <p>
-            <span className="text-3xl font-semibold">$ {choice.price}</span>{" "}
+            <span className="text-3xl font-semibold">
+              $ {choice.selectedVehicle.price}
+            </span>{" "}
             /day
           </p>
         </div>
@@ -174,16 +189,25 @@ function Checkout() {
             </div>
           </label>
         </div>
-        <div className="flex justify-between place-items-center px-8 text-4xl">
-          Total{" "}
-          <p>
-            <span className="font-semibold">$ {finalTotal}</span> /day
-          </p>
+        <div className="flex flex-col gap-4 mt-6 mb-10">
+          <div className="flex justify-between text-4xl px-8">
+            Total{" "}
+            <p>
+              <span className="text-4xl font-semibold">$ {finalTotal}</span>{" "}
+              /day
+            </p>
+          </div>{" "}
+          <div className="flex justify-between text-4xl px-8">
+            Pick-up location
+            <p className="font-semibold">{choice.selectedLocation}</p>
+          </div>
+          <div className="flex flex-col text-3xl px-8 gap-4">
+            <p></p>Select dates
+            <Form />
+          </div>
         </div>
-        <button className="bg-orange-600 text-white text-3xl mb-2 mx-4">
-          PAY
-        </button>
       </div>
+      <Footer />
     </>
   );
 }

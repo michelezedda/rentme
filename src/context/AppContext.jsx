@@ -1,27 +1,29 @@
 import { createContext, useContext, useState } from "react";
 import vehicles from "../data/vehicles";
+import locations from "../data/locations";
 
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
   const [isCarsSelected, setIsCarsSelected] = useState(true);
   const [isTrucksSelected, setIsTrucksSelected] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState("");
   const [choice, setChoice] = useState(null);
   const [vehicle, setVehicle] = useState("");
   const { cars, trucks } = vehicles;
 
   const handleSelectedVehicle = (e) => {
-    setVehicle(vehicle);
+    setVehicle(e.target.value);
   };
 
-  const handleSelected = () => {
-    if (isCarsSelected === true) {
-      setIsCarsSelected((prevState) => !prevState);
-      setIsTrucksSelected((prevState) => !prevState);
-    } else if (isTrucksSelected === true) {
-      setIsCarsSelected((prevState) => !prevState);
-      setIsTrucksSelected((prevState) => !prevState);
-    }
+  const handleSelectedLocation = (e) => {
+    setSelectedLocation(e.target.value);
+    handleChoice(e);
+  };
+
+  const handleType = () => {
+    setIsCarsSelected(!isCarsSelected);
+    setIsTrucksSelected(isCarsSelected);
   };
 
   return (
@@ -29,13 +31,16 @@ export function AppProvider({ children }) {
       value={{
         isCarsSelected,
         isTrucksSelected,
-        handleSelected,
+        handleType,
         vehicle,
         handleSelectedVehicle,
+        handleSelectedLocation,
         cars,
         trucks,
+        selectedLocation,
         choice,
         setChoice,
+        locations,
       }}
     >
       {children}

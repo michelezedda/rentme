@@ -1,11 +1,16 @@
 import opelMokka from "/media/opel-mokka.png";
 import fiat500 from "/media/fiat-500.png";
+import fiat600 from "/media/fiat-600.png";
 import peugeot2008 from "/media/peugeot-2008.png";
 import bmwX7 from "/media/bmw-x7.png";
+import bmw1S from "/media/bmw-1S.png";
+import bmwX3 from "/media/bmw-x3.png";
 import vwTcross from "/media/vw-t-cross.png";
+import vwCaravelle from "/media/vw-caravelle.png";
 import fiatDucato from "/media/fiat-ducato.png";
 import fiatScudo from "/media/fiat-scudo.png";
 import ivecoDaily from "/media/iveco-daily.png";
+import peugeot208 from "/media/peugeot-208.png";
 
 const cars = [
   {
@@ -38,6 +43,34 @@ const cars = [
   },
   {
     id: 2,
+    brand: "Fiat",
+    name: "600",
+    img: fiat600,
+    bags: 2,
+    suitcases: 1,
+    seats: 4,
+    doors: 3,
+    isManual: false,
+    isElectric: false,
+    minAge: 18,
+    price: 54.9,
+  },
+  {
+    id: 3,
+    brand: "Peugeot",
+    name: "208",
+    img: peugeot208,
+    bags: 1,
+    suitcases: 1,
+    seats: 5,
+    doors: 5,
+    isManual: true,
+    isElectric: true,
+    minAge: 18,
+    price: 48.03,
+  },
+  {
+    id: 4,
     brand: "Peugeot",
     name: "2008",
     img: peugeot2008,
@@ -51,7 +84,7 @@ const cars = [
     price: 46.29,
   },
   {
-    id: 3,
+    id: 5,
     brand: "Volkswagen",
     name: "T-Cross",
     img: vwTcross,
@@ -62,10 +95,24 @@ const cars = [
     isManual: false,
     isElectric: false,
     minAge: 21,
-    price: 129.47,
+    price: 62.64,
   },
   {
-    id: 4,
+    id: 6,
+    brand: "Volkswagen",
+    name: "Caravelle",
+    img: vwCaravelle,
+    bags: 2,
+    suitcases: 2,
+    seats: 9,
+    doors: 5,
+    isManual: true,
+    isElectric: false,
+    minAge: 21,
+    price: 107.38,
+  },
+  {
+    id: 7,
     brand: "BMW",
     name: "X7",
     img: bmwX7,
@@ -77,6 +124,34 @@ const cars = [
     isElectric: true,
     minAge: 21,
     price: 60.38,
+  },
+  {
+    id: 8,
+    brand: "BMW",
+    name: "1 SERIES",
+    img: bmw1S,
+    bags: 2,
+    suitcases: 1,
+    seats: 5,
+    doors: 5,
+    isManual: false,
+    isElectric: true,
+    minAge: 21,
+    price: 61.0,
+  },
+  {
+    id: 9,
+    brand: "BMW",
+    name: "X3",
+    img: bmwX3,
+    bags: 2,
+    suitcases: 2,
+    seats: 5,
+    doors: 5,
+    isManual: true,
+    isElectric: false,
+    minAge: 21,
+    price: 93.38,
   },
 ];
 
