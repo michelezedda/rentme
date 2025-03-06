@@ -20,7 +20,7 @@ const cars = [
     isManual: true,
     isElectric: false,
     minAge: 21,
-    price: "48.78",
+    price: 48.78,
   },
   {
     id: 1,
@@ -34,7 +34,7 @@ const cars = [
     isManual: true,
     isElectric: false,
     minAge: 18,
-    price: "41.04",
+    price: 41.04,
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const cars = [
     isManual: false,
     isElectric: true,
     minAge: 21,
-    price: "46.29",
+    price: 46.29,
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const cars = [
     isManual: false,
     isElectric: false,
     minAge: 21,
-    price: "129.47",
+    price: 129.47,
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ const cars = [
     isManual: false,
     isElectric: true,
     minAge: 21,
-    price: "60.38",
+    price: 60.38,
   },
 ];
 
@@ -92,7 +92,7 @@ const trucks = [
     isManual: false,
     isElectric: false,
     minAge: 21,
-    price: "47.60",
+    price: 47.6,
   },
   {
     id: 1,
@@ -105,7 +105,7 @@ const trucks = [
     isManual: false,
     isElectric: true,
     minAge: 21,
-    price: "46.00",
+    price: 46.0,
   },
   {
     id: 2,
@@ -118,7 +118,7 @@ const trucks = [
     isManual: false,
     isElectric: true,
     minAge: 21,
-    price: "69.40",
+    price: 69.4,
   },
 ];
 

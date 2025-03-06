@@ -1,12 +1,29 @@
 import { useAppContext } from "../context/AppContext";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Form() {
-  const { isCarsSelected, vehicle, handleSelectedVehicle } = useAppContext();
+  const {
+    isCarsSelected,
+    handleSelectedVehicle,
+    cars,
+    trucks,
+    choice,
+    setChoice,
+  } = useAppContext();
+  const navigate = useNavigate();
+
+  const handleChoice = (e) => {
+    const selected = e.target.value;
+    const vehicle = isCarsSelected
+      ? cars.find((car) => car.brand + car.name === selected)
+      : trucks.find((truck) => truck.brand + truck.name === selected);
+
+    setChoice(vehicle);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`You selected ${vehicle}`);
+    choice && navigate("/checkout");
   };
 
   return (
@@ -14,45 +31,54 @@ function Form() {
       <form
         action="#"
         className="flex flex-col gap-2 text-xl place-items-center"
+        onSubmit={handleSubmit}
       >
         {isCarsSelected ? (
           <>
-            <label htmlFor="cars" id="cars"></label>
+            <label htmlFor="cars"></label>
             <select
               name="cars"
               id="cars"
               className="text-center cursor-pointer"
               defaultValue=""
-              onChange={handleSelectedVehicle}
+              onChange={(e) => {
+                handleSelectedVehicle(e);
+                handleChoice(e);
+              }}
               required
             >
-              <option value={vehicle} disabled>
+              <option value="" disabled>
                 -- Select a car --
               </option>
-              <option value="Opel Mokka">Opel Mokka</option>
-              <option value="Fiat 600">Fiat 600</option>
-              <option value="Peugeot 2008">Peugeot 2008</option>
-              <option value="BMW X7">BMW X7</option>
-              <option value="Volkswagen T-Cross">Volkswagen T-Cross</option>
+              {cars.map((car) => (
+                <option key={car.id} value={car.brand + car.name}>
+                  {car.brand + car.name}
+                </option>
+              ))}
             </select>
           </>
         ) : (
           <>
-            <label htmlFor="trucks" id="trucks"></label>
+            <label htmlFor="trucks"></label>
             <select
               name="trucks"
               id="trucks"
               className="text-center cursor-pointer"
               defaultValue=""
-              onChange={handleSelectedVehicle}
+              onChange={(e) => {
+                handleSelectedVehicle(e);
+                handleChoice(e);
+              }}
               required
             >
-              <option value={vehicle} disabled>
+              <option value="" disabled>
                 -- Select a truck --
               </option>
-              <option value="Fiat Ducato">Fiat Ducato</option>
-              <option value="Fiat Scudo">Fiat Scudo</option>
-              <option value="IVECO Daily">IVECO Daily</option>
+              {trucks.map((truck) => (
+                <option key={truck.id} value={truck.brand + truck.name}>
+                  {truck.brand} {truck.name}
+                </option>
+              ))}
             </select>
           </>
         )}
@@ -87,7 +113,6 @@ function Form() {
           type="submit"
           value="SELECT PICKUP"
           className="bg-orange-600 w-full text-white rounded-lg p-1 text-xl font-semibold mt-4 cursor-pointer active:scale-98"
-          onClick={handleSubmit}
         />
       </form>
     </>

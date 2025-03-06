@@ -1,14 +1,17 @@
 import VehicleCard from "./VehicleCard";
-import vehicles from "../data/vehicles";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { useAppContext } from "../context/AppContext";
 
 function Vehicles() {
-  const { cars, trucks } = vehicles;
+  const { cars, trucks } = useAppContext();
 
   return (
     <>
-      <div className="flex flex-col items-center gap-2 bg-linear-to-b from-neutral-300 to-neutral-950 text-white px-4 py-10">
+      <div
+        id="vehicles"
+        className="flex flex-col items-center gap-2 bg-linear-to-b from-neutral-300 to-neutral-950 text-white px-4 pt-10 pb-20"
+      >
         {/* Cars */}
         <h2 className="text-6xl my-6 text-center font-semibold">
           THE PERFECT CAR FOR YOUR NEXT TRIP

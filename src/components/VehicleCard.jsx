@@ -41,7 +41,6 @@ function VehicleCard({
             </h3>
             <p className="text-2xl pb-[1px]">or similar</p>
           </div>
-
           <div className="absolute top-18 left-5 flex gap-2 duration-500">
             <span className="flex text-sm bg-neutral-400 rounded-[99px] items-center px-3 py-1 gap-2">
               <FaUser className="size-4" />

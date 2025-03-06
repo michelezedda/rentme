@@ -38,7 +38,9 @@ function Navbar() {
           <span className="text-4xl font-bold text-orange-600">RentMe</span>
           <ul className="flex gap-4 py-1 items-center text-white">
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
-              <FaCarRear className="size-5.5" />
+              <a href="#vehicles">
+                <FaCarRear className="size-5.5" />
+              </a>
             </li>
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
               <IoEarth className="size-6" />
