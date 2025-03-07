@@ -4,10 +4,7 @@
   <br>
 </h1>
 
-<h2 align="center">RentMe</h2>
-
-## Key Features
-- 
+<h2 align="center">RentMe</h2> 
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
@@ -17,10 +14,7 @@
 - **Vite**: Front-end dev tool improving developer experience.
 - **react-hot-toast**: A React library for displaying customizable notifications.
 - **Splide**: A JavaScript library for creating responsive and accessible arousels.
-- **Lucide**: An icon library for react applications.
-- **Formik**: A React library for building and managing forms efficiently.
-- **AOS (Animate On Scroll)**: JavaScript library for scroll-based animations.
-- **Motion One**: Lightweight and performant animation library.
+- **React Icons**: 
 - **Rombo**: A JavaScript library for smooth and performant animations.
 
 ## Project Link
