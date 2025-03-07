@@ -21,7 +21,7 @@ function Form() {
       <form action="#" className="flex flex-col gap-2" onSubmit={handleSubmit}>
         <p className="text-3xl ml-1">Select dates</p>
         <div className="flex justify-around border-2 border-stone-600 bg-stone-300 rounded-xl text-xl">
-          <div className="flex flex-col p-2 w-full">
+          <div className="flex flex-col p-2 flex-1/2">
             <label htmlFor="pickup" className="font-semibold">
               <p className="flex place-items-center gap-2">
                 Pick-up <IoIosArrowDown />
@@ -38,7 +38,7 @@ function Form() {
               required
             />
           </div>
-          <div className="flex flex-col p-2 md:w-full">
+          <div className="flex flex-col p-2 flex-1/2">
             <label htmlFor="return" className="font-semibold">
               <p className="flex place-items-center gap-2">
                 Return <IoIosArrowDown />
