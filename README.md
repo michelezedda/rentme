@@ -4,7 +4,10 @@
   <br>
 </h1>
 
-<h2 align="center">RentMe</h2> 
+<h2 align="center">RentMe: Rent. Drive. Go.</h2> 
+
+## Introduction
+RentMe is a fast, intuitive car rental web app designed for seamless booking and a smooth user experience.
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
