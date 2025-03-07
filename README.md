@@ -17,7 +17,8 @@ RentMe is a fast, intuitive, and responsive car rental web app inspired by Sixt.
 - **Vite**: Front-end dev tool improving developer experience.
 - **react-hot-toast**: A React library for displaying customizable notifications.
 - **Splide**: A JavaScript library for creating responsive and accessible arousels.
-- **React Icons**: 
+- **react-hot-toast**: A React library for displaying customizable notifications.
+- **React Icons**: A library providing popular icons as React components.
 - **Rombo**: A JavaScript library for smooth and performant animations.
 
 ## Project Link
