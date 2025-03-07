@@ -20,8 +20,8 @@ function Form() {
     <>
       <form action="#" className="flex flex-col gap-2" onSubmit={handleSubmit}>
         <p className="text-3xl ml-1">Select dates</p>
-        <div className="flex justify-around border-2 border-stone-600 p-4 rounded-xl text-xl gap-4">
-          <div className="flex flex-col bg-stone-300 rounded-xl p-2 md:w-full">
+        <div className="flex justify-around border-2 border-stone-600 bg-stone-300 rounded-xl text-xl">
+          <div className="flex flex-col p-2 w-full">
             <label htmlFor="pickup" className="font-semibold">
               <p className="flex place-items-center gap-2">
                 Pick-up <IoIosArrowDown />
@@ -31,14 +31,14 @@ function Form() {
               type="datetime-local"
               id="pickup"
               name="Pick-up"
-              className="cursor-pointer "
+              className="cursor-pointer border-2 border-stone-400 rounded-lg p-2"
               min={new Date().toISOString().slice(0, 16)}
               onChange={handlePickupChange}
               value={pickupDate}
               required
             />
           </div>
-          <div className="flex flex-col bg-stone-300 rounded-xl p-2 md:w-full">
+          <div className="flex flex-col p-2 md:w-full">
             <label htmlFor="return" className="font-semibold">
               <p className="flex place-items-center gap-2">
                 Return <IoIosArrowDown />
@@ -48,7 +48,7 @@ function Form() {
               type="datetime-local"
               id="return"
               name="Return"
-              className="cursor-pointer"
+              className="cursor-pointer border-2 border-stone-400 rounded-lg p-2"
               min={pickupDate || new Date().toISOString().slice(0, 16)}
               required
             />
