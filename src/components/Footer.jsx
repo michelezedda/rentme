@@ -46,8 +46,13 @@ function Footer() {
           </div>
         </div>
         <div className="flex mt-2 gap-2">
-          <img src={appStoreImg} alt="app-store" />
-          <img src={playStoreImg} alt="play-store" />
+          <img
+            src={appStoreImg}
+            alt="app-store"
+            className="cursor-pointer
+          "
+          />
+          <img src={playStoreImg} alt="play-store" className="cursor-pointer" />
         </div>
         <p className="text-2xl text-neutral-400 font-semibold">
           &#169; RentMe {new Date().getFullYear()}

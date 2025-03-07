@@ -26,9 +26,9 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY && window.scrollY > 500) {
+      if (window.scrollY > lastScrollY && window.scrollY > 430) {
         setIsNavbarVisible(false);
-      } else if (window.scrollY < lastScrollY && window.scrollY < 500) {
+      } else if (window.scrollY < lastScrollY && window.scrollY < 430) {
         setIsNavbarVisible(true);
       }
       setLastScrollY(window.scrollY);
@@ -59,10 +59,10 @@ function Navbar() {
   return (
     <>
       <div
-        className={`fixed left-0 right-0 max-w-screen-lg lg:px-4 mx-6 lg:mx-auto transition-opacity duration-200 ${
+        className={`fixed left-0 right-0 max-w-screen-lg lg:px-4 mx-6 lg:mx-auto ${
           isNavbarVisible
-            ? "motion-translate-y-in-100"
-            : "opacity-0 pointer-events-none"
+            ? "motion-preset-rebound-down"
+            : "motion-blur-out-md motion-opacity-out-0"
         }`}
       >
         <div className="flex justify-between py-1 md:py-2 p-2 placeitem">
@@ -108,17 +108,17 @@ function Navbar() {
           </div>
           <form
             action="#"
-            className="flex flex-col gap-2 text-xl mx-4 mt-4"
+            className="flex flex-col gap-2 text-xl mt-4"
             onSubmit={handleSubmit}
           >
-            <div className="flex justify-between mx-2">
+            <div className="flex justify-between rounded-xl pl-2 items-center bg-stone-200">
               {isCarsSelected ? (
                 <>
-                  <label htmlFor="cars">Car:</label>
+                  <label htmlFor="cars">CAR</label>
                   <select
                     name="cars"
                     id="cars"
-                    className="text-center cursor-pointer"
+                    className="text-center cursor-pointer rounded-xl bg-stone-100 w-50 border-stone-600 border-2"
                     defaultValue=""
                     onChange={(e) => {
                       handleSelectedVehicle(e);
@@ -138,11 +138,11 @@ function Navbar() {
                 </>
               ) : (
                 <>
-                  <label htmlFor="trucks">Truck:</label>
+                  <label htmlFor="trucks">TRUCK</label>
                   <select
                     name="trucks"
                     id="trucks"
-                    className="text-center cursor-pointer"
+                    className="text-center cursor-pointer rounded-xl bg-stone-100 w-50 border-stone-600 border-2"
                     defaultValue=""
                     onChange={(e) => {
                       handleSelectedVehicle(e);
@@ -162,12 +162,12 @@ function Navbar() {
                 </>
               )}
             </div>
-            <div className="flex justify-between mx-2">
-              <label htmlFor="location">Pick-up location:</label>
+            <div className="flex justify-between rounded-xl pl-2 items-center bg-stone-200">
+              <label htmlFor="location">PICKUP LOCATION</label>
               <select
                 name="location"
                 id="location"
-                className="text-center cursor-pointer"
+                className="text-center cursor-pointer rounded-xl bg-stone-100 w-50 border-stone-600 border-2"
                 defaultValue=""
                 onChange={(e) => {
                   handleSelectedLocation(e);
@@ -182,12 +182,12 @@ function Navbar() {
                     {location.city}
                   </option>
                 ))}
-              </select>{" "}
+              </select>
             </div>
             <input
               type="submit"
               value="SELECT PICKUP"
-              className="bg-orange-600 w-full text-white rounded-lg p-1 text-xl font-semibold mt-4 cursor-pointer active:scale-98"
+              className="bg-orange-600 w-full text-white rounded-lg p-2 text-2xl font-semibold mt-4 cursor-pointer active:scale-98"
             />
           </form>
         </div>
