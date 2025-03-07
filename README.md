@@ -7,7 +7,7 @@
 <h2 align="center">RentMe: Rent. Drive. Go.</h2> 
 
 ## Introduction
-RentMe is a fast, intuitive car rental web app inspired by Sixt, designed for seamless booking and a smooth user experience. Built with React and Tailwind CSS, it ensures high performance, responsiveness, and engaging interactions.
+RentMe is a fast, intuitive, and responsive car rental web app inspired by Sixt, crafted for effortless booking and a smooth, user-friendly experience. It’s designed to make reserving a car quick and easy, with a seamless process from start to finish.
 
 ## Technologies Used
 - **HTML5 & CSS3**: Markup and styling languages for web development.
