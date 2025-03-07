@@ -112,6 +112,28 @@ function Navbar() {
             onSubmit={handleSubmit}
           >
             <div className="flex justify-between rounded-xl pl-2 items-center bg-stone-200">
+              <label htmlFor="location">PICKUP LOCATION</label>
+              <select
+                name="location"
+                id="location"
+                className="text-center cursor-pointer rounded-xl bg-stone-100 w-50 border-stone-600 border-2"
+                defaultValue=""
+                onChange={(e) => {
+                  handleSelectedLocation(e);
+                }}
+                required
+              >
+                <option value="" disabled>
+                  -- Select location --
+                </option>
+                {locations.map((location) => (
+                  <option key={location.id} value={location.city}>
+                    {location.city}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="flex justify-between rounded-xl pl-2 items-center bg-stone-200">
               {isCarsSelected ? (
                 <>
                   <label htmlFor="cars">CAR</label>
@@ -161,28 +183,6 @@ function Navbar() {
                   </select>
                 </>
               )}
-            </div>
-            <div className="flex justify-between rounded-xl pl-2 items-center bg-stone-200">
-              <label htmlFor="location">PICKUP LOCATION</label>
-              <select
-                name="location"
-                id="location"
-                className="text-center cursor-pointer rounded-xl bg-stone-100 w-50 border-stone-600 border-2"
-                defaultValue=""
-                onChange={(e) => {
-                  handleSelectedLocation(e);
-                }}
-                required
-              >
-                <option value="" disabled>
-                  -- Select location --
-                </option>
-                {locations.map((location) => (
-                  <option key={location.id} value={location.city}>
-                    {location.city}
-                  </option>
-                ))}
-              </select>
             </div>
             <input
               type="submit"
