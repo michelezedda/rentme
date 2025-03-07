@@ -6,7 +6,7 @@ import "@splidejs/react-splide/css";
 function Reviews() {
   return (
     <>
-      <div className="bg-[url('../public/media/reviewsbg.png')] bg-[70%_1%] h-150">
+      <div className="bg-[url('/media/reviewsbg.png')] bg-[70%_1%] h-150">
         <Splide
           options={{
             perMove: 1,

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import toast, { Toaster } from "react-hot-toast";
+import { useState } from "react";
 
 function Form() {
   const [pickupDate, setPickupDate] = useState("");
@@ -19,25 +20,29 @@ function Form() {
     <>
       <form action="#" className="flex flex-col gap-2" onSubmit={handleSubmit}>
         <p className="text-3xl ml-1">Select dates</p>
-        <div className="flex justify-around border-2 border-stone-600 p-4 rounded-xl text-xl">
-          <div className="flex flex-col">
+        <div className="flex justify-around border-2 border-stone-600 p-4 rounded-xl text-xl gap-4">
+          <div className="flex flex-col bg-stone-300 rounded-xl p-2 md:w-full">
             <label htmlFor="pickup" className="font-semibold">
-              Pick-up
+              <p className="flex place-items-center gap-2">
+                Pick-up <IoIosArrowDown />
+              </p>
             </label>
             <input
               type="datetime-local"
               id="pickup"
               name="Pick-up"
-              className="cursor-pointer"
+              className="cursor-pointer "
               min={new Date().toISOString().slice(0, 16)}
               onChange={handlePickupChange}
+              value={pickupDate}
               required
             />
           </div>
-          <hr className="h-14 text-black border mx-4" />
-          <div className="flex flex-col">
+          <div className="flex flex-col bg-stone-300 rounded-xl p-2 md:w-full">
             <label htmlFor="return" className="font-semibold">
-              Return
+              <p className="flex place-items-center gap-2">
+                Return <IoIosArrowDown />
+              </p>
             </label>
             <input
               type="datetime-local"

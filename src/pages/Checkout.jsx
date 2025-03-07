@@ -11,7 +11,6 @@ import Form from "../components/Form";
 
 function Checkout() {
   const { choice } = useAppContext();
-  console.log(choice);
   const [additionalCharges, setAdditionalCharges] = useState({
     additionalDriver: 0,
     crossBorder: 0,
@@ -115,7 +114,7 @@ function Checkout() {
             <span className="flex gap-1.5">
               {choice.selectedVehicle.isManual ? (
                 <>
-                  <TbManualGearboxFilled className="md:mt-1" /> Manual
+                  <TbManualGearboxFilled className="size-4.5 md:mt-1" /> Manual
                 </>
               ) : (
                 <>
@@ -147,7 +146,6 @@ function Checkout() {
                   <input
                     type="checkbox"
                     className="size-6 rounded-full cursor-pointer"
-                    value={7.94}
                     onChange={(e) => handleChange(e, "additionalDriver", 7.94)}
                   />
                 </div>
@@ -159,7 +157,6 @@ function Checkout() {
                   <input
                     type="checkbox"
                     className="size-6 rounded-full cursor-pointer"
-                    value={53.93}
                     onChange={(e) => handleChange(e, "crossBorder", 53.93)}
                   />
                 </div>
@@ -171,7 +168,6 @@ function Checkout() {
                   <input
                     type="checkbox"
                     className="size-6 rounded-full cursor-pointer"
-                    value={8.84}
                     onChange={(e) => handleChange(e, "gps", 8.84)}
                   />
                 </div>
@@ -183,7 +179,6 @@ function Checkout() {
                   <input
                     type="checkbox"
                     className="size-6 rounded-full cursor-pointer"
-                    value={2.33}
                     onChange={(e) => handleChange(e, "skiRack", 2.33)}
                   />
                 </div>
