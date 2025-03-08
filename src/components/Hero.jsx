@@ -11,7 +11,7 @@ function Hero() {
             <IoEarth className="size-8.5" />
             <h3 className="text-4xl font-semibold">GLOBAL REACH</h3>
             <p className="text-2xl">
-              2,000+ SIXT stations in over 105 countries
+              2,000+ RentMe stations in over 105 countries
             </p>
           </div>
           <div className="place-items-center mt-10 md:mt-0">
