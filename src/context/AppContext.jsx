@@ -21,9 +21,14 @@ export function AppProvider({ children }) {
     handleChoice(e);
   };
 
-  const handleType = () => {
-    setIsCarsSelected(!isCarsSelected);
-    setIsTrucksSelected(isCarsSelected);
+  const carsBtn = () => {
+    setIsCarsSelected(true);
+    setIsTrucksSelected(false);
+  };
+
+  const trucksBtn = () => {
+    setIsTrucksSelected(true);
+    setIsCarsSelected(false);
   };
 
   return (
@@ -31,7 +36,6 @@ export function AppProvider({ children }) {
       value={{
         isCarsSelected,
         isTrucksSelected,
-        handleType,
         vehicle,
         handleSelectedVehicle,
         handleSelectedLocation,
@@ -41,6 +45,8 @@ export function AppProvider({ children }) {
         choice,
         setChoice,
         locations,
+        carsBtn,
+        trucksBtn,
       }}
     >
       {children}

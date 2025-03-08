@@ -19,7 +19,8 @@ function Navbar() {
     isCarsSelected,
     isTrucksSelected,
     selectedLocation,
-    handleType,
+    carsBtn,
+    trucksBtn,
     handleSelectedVehicle,
     handleSelectedLocation,
   } = useAppContext();
@@ -89,7 +90,7 @@ function Navbar() {
                   ? "bg-neutral-800 text-white"
                   : "bg-neutral-200 text-neutral-800"
               }`}
-              onClick={handleType}
+              onClick={carsBtn}
             >
               <FaCarRear />
               Cars
@@ -100,7 +101,7 @@ function Navbar() {
                   ? "bg-neutral-800 text-white"
                   : "bg-neutral-200 text-neutral-800"
               }`}
-              onClick={handleType}
+              onClick={trucksBtn}
             >
               <BsTruckFrontFill />
               Trucks
