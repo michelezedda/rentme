@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <div className="bg-neutral-300 py-15">
-        <div className="flex flex-col md:flex-row px-6 md:gap-8 text-center">
+        <div className="flex flex-col md:flex-row px-6 md:gap-8 justify-center items-center text-center">
           <div className="place-items-center">
             <IoEarth className="size-8.5" />
             <h3 className="text-4xl font-semibold">GLOBAL REACH</h3>

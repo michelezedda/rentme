@@ -60,7 +60,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`fixed left-0 right-0 max-w-screen-lg lg:px-4 mx-6 lg:mx-auto ${
+        className={`fixed left-0 right-0 max-w-screen-xl lg:px-4 mx-6 lg:mx-auto ${
           isNavbarVisible
             ? "motion-preset-rebound-down"
             : "motion-blur-out-md motion-opacity-out-0"
