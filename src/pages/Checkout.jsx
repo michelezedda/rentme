@@ -37,7 +37,7 @@ function Checkout() {
 
   return (
     <>
-      <div className="flex flex-col sticky left-0 right-0 gap-4 bg-neutral-200 h-full max-w-screen-lg lg:mx-auto">
+      <div className="flex flex-col sticky left-0 right-0 gap-4 bg-neutral-200 h-full max-w-screen-xl lg:mx-auto">
         <div className="absolute top-5 left-5">
           <a href="/">
             <IoChevronBackCircleOutline className="size-14 text-white cursor-pointer scale-98 hover:text-orange-600 ease-in-out duration-500" />
@@ -71,7 +71,7 @@ function Checkout() {
             ) : null}
           </div>
         </div>
-        <div className="flex justify-between gap-4 m-4 md:m-10 md:text-xl">
+        <div className="flex justify-between lg:justify-start gap-4 lg:gap-30 m-4 md:m-10 md:text-xl">
           <div className="flex flex-col gap-2">
             <span className="flex gap-2">
               <FaUser className="size-4 md:mt-1.5" />
