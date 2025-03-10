@@ -1,9 +1,6 @@
 import { BsFillLuggageFill } from "react-icons/bs";
-import { FaBagShopping } from "react-icons/fa6";
-import { TbManualGearboxFilled } from "react-icons/tb";
-import { FaAdn, FaWeightHanging, FaUser, FaIdCard } from "react-icons/fa";
-import { MdLuggage, MdElectricBolt } from "react-icons/md";
-import { GiCarDoor } from "react-icons/gi";
+import { FaWeightHanging, FaUser, FaIdCard } from "react-icons/fa";
+import { MdElectricBolt } from "react-icons/md";
 
 function VehicleCard({
   brand,
@@ -13,16 +10,9 @@ function VehicleCard({
   bags,
   suitcases,
   seats,
-  doors,
-  isManual,
   isElectric,
-  minAge,
   price,
 }) {
-  const handleClick = () => {
-    setIsInfoCardOpen((prevState) => !prevState);
-  };
-
   return (
     <>
       <div
@@ -31,7 +21,6 @@ function VehicleCard({
             ? "from-white via-blue-300 to-blue-700"
             : "from-white via-orange-300 to-orange-700"
         }`}
-        onClick={handleClick}
       >
         <div className="flex absolute top-10 items-end gap-2 duration-500">
           <h3 className="text-4xl font-semibold">

@@ -25,6 +25,7 @@ function Navbar() {
     handleSelectedLocation,
   } = useAppContext();
 
+  // Function to handle navbar visibility
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 430) {
@@ -39,6 +40,7 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  // Function to determine which vehicle and location is being selected
   const handleChoice = (e) => {
     const selected = e.target.value;
 
@@ -52,6 +54,7 @@ function Navbar() {
     });
   };
 
+  // Function to handle form submission and navigate to checkout page
   const handleSubmit = (e) => {
     e.preventDefault();
     choice && navigate("/checkout");

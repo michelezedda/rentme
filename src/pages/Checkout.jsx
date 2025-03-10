@@ -18,6 +18,7 @@ function Checkout() {
     skiRack: 0,
   });
 
+  // Function to handle each additional charge
   const handleChange = (e, key, value) => {
     setAdditionalCharges((prevState) => ({
       ...prevState,
@@ -25,12 +26,14 @@ function Checkout() {
     }));
   };
 
+  // Function to sum additional charges
   const totalAdditionalCharges =
     additionalCharges.additionalDriver +
     additionalCharges.crossBorder +
     additionalCharges.gps +
     additionalCharges.skiRack;
 
+  // Function to calculate the final total
   const finalTotal = (
     choice.selectedVehicle.price + totalAdditionalCharges
   ).toFixed(2);

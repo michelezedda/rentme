@@ -12,20 +12,24 @@ export function AppProvider({ children }) {
   const [vehicle, setVehicle] = useState("");
   const { cars, trucks } = vehicles;
 
+  // Function to select a vehicle
   const handleSelectedVehicle = (e) => {
     setVehicle(e.target.value);
   };
 
+  // Function to select a location
   const handleSelectedLocation = (e) => {
     setSelectedLocation(e.target.value);
     handleChoice(e);
   };
 
+  // Function to select "cars" instead of "trucks"
   const carsBtn = () => {
     setIsCarsSelected(true);
     setIsTrucksSelected(false);
   };
 
+  // Function to select "trucks" instead of "cars"
   const trucksBtn = () => {
     setIsTrucksSelected(true);
     setIsCarsSelected(false);

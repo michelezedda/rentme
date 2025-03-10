@@ -5,10 +5,12 @@ import { useState } from "react";
 function Form() {
   const [pickupDate, setPickupDate] = useState("");
 
+  // Update pickupDate state when user selects a date
   const handlePickupChange = (e) => {
     setPickupDate(e.target.value);
   };
 
+  // Function to handle form submission and return a toast
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.error(
