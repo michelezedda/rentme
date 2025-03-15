@@ -40,7 +40,7 @@ function Checkout() {
 
   return (
     <>
-      <div className="flex flex-col sticky left-0 right-0 gap-4 bg-neutral-200 h-full max-w-screen-xl lg:mx-auto">
+      <div className="flex flex-col sticky left-0 right-0 gap-4 bg-neutral-200 h-full max-w-screen-2xl lg:mx-auto">
         <div className="absolute top-5 left-5">
           <a href="/">
             <IoChevronBackCircleOutline className="size-14 text-white cursor-pointer scale-98 hover:text-orange-600 ease-in-out duration-500" />
