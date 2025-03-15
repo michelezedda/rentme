@@ -14,14 +14,14 @@ function Hero() {
               2,000+ RentMe stations in over 105 countries
             </p>
           </div>
-          <div className="place-items-center mt-10 md:mt-0">
+          <div className="flex flex-col place-items-center mt-10 md:mt-0">
             <FaCarRear className="size-8" />
             <h3 className="text-4xl font-semibold">DISTINCTIVE FLEET</h3>
             <p className="text-2xl">
               From high-end convertibles to premium SUVs
             </p>
           </div>
-          <div className="place-items-center mt-10 md:mt-0">
+          <div className="flex flex-col place-items-center mt-10 md:mt-0">
             <PiHandHeartBold className="size-9.5" />
             <h3 className="text-4xl font-semibold">EXCEPTIONAL SERVICE</h3>
             <p className="text-2xl">
