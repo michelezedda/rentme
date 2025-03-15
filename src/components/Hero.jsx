@@ -5,7 +5,7 @@ import { PiHandHeartBold } from "react-icons/pi";
 function Hero() {
   return (
     <>
-      <div className="bg-neutral-300 py-15">
+      <div className="bg-neutral-300 py-15  xl:px-35">
         <div className="flex flex-col md:flex-row px-6 md:gap-8 justify-center items-center text-center">
           <div className="flex flex-col place-items-center">
             <IoEarth className="size-8.5" />
