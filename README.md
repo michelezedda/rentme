@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://i.ibb.co/Hp9GbW2R/rentme-project.png" alt="RentMe" width="1100">
+  <img src="https://i.ibb.co/xS7M6qP8/Screenshot-2025-03-15-133606.png" alt="RentMe" width="1100">
   <br>
 </h1>
 
