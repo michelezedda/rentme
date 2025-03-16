@@ -4,7 +4,7 @@ import playStoreImg from "/media/playstore.png";
 function Footer() {
   return (
     <>
-      <div className="flex flex-col text-white bg-neutral-800 p-8 gap-4">
+      <div className="flex flex-col text-white bg-neutral-800 p-8 gap-4 xl:place-items-center">
         <div>
           <span className="text-4xl font-bold text-orange-600">RentMe</span>
         </div>
@@ -45,7 +45,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex mt-2 gap-2">
+        <div className="flex mt-2 gap-2 xl:gap-10">
           <img
             src={appStoreImg}
             alt="app-store"

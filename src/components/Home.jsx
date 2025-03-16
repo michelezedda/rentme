@@ -1,21 +1,21 @@
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Hero from "./Hero";
-import Vehicles from "./Vehicles";
-import Reviews from "./Reviews";
+import Vehicles from "./vehicles/Vehicles";
+import Reviews from "./reviews/Reviews";
 import Footer from "./Footer";
 
 function Home() {
   return (
     <>
-      <div className="container mx-auto max-w-screen-2xl">
-        <Navbar />
-        <Header />
+      <Navbar />
+      <Header />
+      <div className="container mx-auto max-w-screen-xl">
         <Hero />
         <Vehicles />
-        <Reviews />
-        <Footer />
       </div>
+      <Reviews />
+      <Footer />
     </>
   );
 }

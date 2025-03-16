@@ -4,7 +4,7 @@ import { FaCarRear } from "react-icons/fa6";
 import { IoEarth } from "react-icons/io5";
 import { BsTruckFrontFill } from "react-icons/bs";
 import { useAppContext } from "../context/AppContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -70,7 +70,9 @@ function Navbar() {
         }`}
       >
         <div className="flex justify-between py-1 md:py-2 p-2 placeitem">
-          <span className="text-4xl font-bold text-orange-600">RentMe</span>
+          <Link to={"/"}>
+            <span className="text-4xl font-bold text-orange-600">RentMe</span>
+          </Link>
           <ul className="flex gap-4 py-1 items-center text-white">
             <li className="hover:text-orange-600 cursor-pointer ease-in-out duration-500">
               <a href="#vehicles">

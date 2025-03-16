@@ -1,7 +1,7 @@
 function ReviewCard({ name, location, comment }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center mt-10 text-white px-4 md:px-50 h-140 bg-black/50">
+      <div className="flex flex-col items-center justify-center text-white px-4 md:px-25 2xl:px-80 3xl:px-165 h-150 bg-black/50">
         <p className="text-4xl">{comment}</p>
         <div className="flex mt-6 items-end">
           <h4 className="text-4xl">

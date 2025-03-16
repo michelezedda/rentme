@@ -1,7 +1,7 @@
 import VehicleCard from "./VehicleCard";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { useAppContext } from "../context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 
 function Vehicles() {
   const { cars, trucks } = useAppContext();
@@ -10,7 +10,7 @@ function Vehicles() {
     <>
       <div
         id="vehicles"
-        className="flex flex-col items-center gap-2 bg-linear-to-b from-neutral-300 to-neutral-950 text-white px-4 pt-10 pb-20"
+        className="flex flex-col items-center gap-2 text-white px-4 pt-10 pb-20 xl:border-4 rounded-md"
       >
         {/* Cars */}
         <h2 className="text-6xl my-6 text-center font-semibold">
