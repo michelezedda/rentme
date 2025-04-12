@@ -21,6 +21,9 @@ This project is built using modern web technologies like React, Vite, and Tailwi
   - react-router-dom (for page navigation)
   - react-icons (for UI icons)
   - Splide (carousel component)
+ 
+- **Version Control:**
+  - Git
 
 - **Hosting:**
   - Vercel (for hosting the production app)
