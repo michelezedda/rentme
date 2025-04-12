@@ -7,18 +7,71 @@
 <h2 align="center">RentMe: Rent. Drive. Go.</h2> 
 
 ## Introduction
-RentMe is a fast, intuitive, and responsive car rental web app inspired by Sixt.com, crafted for effortless booking and a smooth, user-friendly experience. It’s designed to make reserving a car quick and easy, with a seamless process from start to finish.
+RentMe is a car rental web application inspired by Sixt.com. The platform is designed to offer a fast, intuitive, and responsive experience for users to easily book cars for rent.
+
+This project is built using modern web technologies like React, Vite, and Tailwind CSS to ensure an efficient, scalable, and user-friendly interface.
 
 ## Technologies Used
-- **HTML5 & CSS3**: Markup and styling languages for web development.
-- **Tailwind CSS**: CSS extension language for more efficient styling.
-- **Git**: Version control system for tracking changes and collaborating.
-- **React**: JavaScript library for dynamic user interfaces.
-- **Vite**: Front-end dev tool improving developer experience.
-- **react-hot-toast**: A React library for displaying customizable notifications.
-- **Splide**: A JavaScript library for creating responsive and accessible arousels.
-- **React Icons**: A library providing popular icons as React components.
-- **Rombo**: A JavaScript library for smooth and performant animations.
 
-## Project Link
-Explore RentMe: :link: [RentMe](https://rentme-demo.vercel.app/)
+- **Frontend:**
+  - React
+  - Tailwind CSS
+  - Vite
+  - Splide (carousel component)
+  - react-hot-toast (notifications)
+
+- **Hosting:**
+  - Vercel (for hosting the production app)
+
+## Live Demo
+
+You can try out the live version of the RentMe app by visiting: :link: [RentMe](https://rentme-demo.vercel.app/)
+
+## Installation
+
+To run the project locally, follow these steps:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (>=16.x)
+- npm or yarn
+
+### Steps
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/michelezedda/rentme.git
+    ```
+
+2. Navigate into the project directory:
+
+    ```bash
+    cd rentme
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    or if you're using Yarn:
+
+    ```bash
+    yarn install
+    ```
+
+4. Run the app locally:
+
+    ```bash
+    npm run dev
+    ```
+
+    or with Yarn:
+
+    ```bash
+    yarn dev
+    ```
