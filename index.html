@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html lang="en_US">
   <head>
+    <!-- Charset & Compatibility -->
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="RentMe: Rent your car easily, drive with confidence, and go wherever you want."
+    />
+    <meta
+      name="keywords"
+      content="RentMe, car rental, rent car, drive, car sharing, vehicle rental"
+    />
+    <meta name="author" content="Michele Zedda" />
+    <meta name="designer" content="Michele Zedda - https://michelezedda.com" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rentme.vercel.app/" />
+
+    <!-- Open Graph Meta Tags (Social Sharing) -->
+    <meta property="og:title" content="RentMe" />
+    <meta property="og:description" content="RentMe: Rent. Drive. Go." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rentme.vercel.app/" />
+    <meta property="og:image" content="https://i.ibb.co/RpFsz6dF/rentme.png" />
+    <meta property="og:site_name" content="RentMe" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- PWA / Mobile App Support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="RentMe" />
+    <meta name="application-name" content="RentMe" />
+    <meta name="theme-color" content="#0d6efd" />
+
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
     <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
 
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <meta property="og:title" content="RentMe" />
-    <meta property="og:description" content="RentMe: Rent. Drive. Go." />
-    <meta property="og:url" content="https://rentme.vercel.app/" />
-    <meta property="og:image" content="https://i.ibb.co/RpFsz6dF/rentme.png" />
-    <meta property="og:locale" content="en" />
-
+    <!-- Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Page Title -->
     <title>RentMe</title>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "RentMe",
+        "url": "https://rentme.vercel.app",
+        "image": "https://i.ibb.co/RpFsz6dF/rentme.png",
+        "description": "RentMe: Rent your car easily, drive with confidence, and go wherever you want.",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "All",
+        "author": {
+          "@type": "Person",
+          "name": "Michele Zedda"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
