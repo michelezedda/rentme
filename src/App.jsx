@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import Home from "./components/Home";
+import Home from "./Home";
 import Checkout from "./pages/Checkout";
 
 function App() {
