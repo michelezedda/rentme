@@ -5,6 +5,7 @@ import locations from "../data/locations";
 const AppContext = createContext();
 
 export function AppProvider({ children }) {
+  const [checkoutPage, setCheckoutPage] = useState(false);
   const [isCarsSelected, setIsCarsSelected] = useState(true);
   const [isTrucksSelected, setIsTrucksSelected] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -38,6 +39,8 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider
       value={{
+        checkoutPage,
+        setCheckoutPage,
         isCarsSelected,
         isTrucksSelected,
         vehicle,

@@ -4,10 +4,15 @@ import Hero from "./components/Hero";
 import Vehicles from "./components/vehicles/Vehicles";
 import Reviews from "./components/reviews/Reviews";
 import Footer from "./components/Footer";
+import Checkout from "./components/Checkout";
+import { useAppContext } from "./context/AppContext";
 
 function Home() {
+  const { checkoutPage } = useAppContext();
+
   return (
     <>
+      {checkoutPage && <Checkout />}
       <Navbar />
       <Header />
       <div className="container mx-auto max-w-screen-xl">

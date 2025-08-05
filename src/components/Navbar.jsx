@@ -4,17 +4,15 @@ import { FaCarRear } from "react-icons/fa6";
 import { IoEarth } from "react-icons/io5";
 import { BsTruckFrontFill } from "react-icons/bs";
 import { useAppContext } from "../context/AppContext";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const navigate = useNavigate();
   const {
     locations,
     cars,
     trucks,
-    choice,
     setChoice,
     isCarsSelected,
     isTrucksSelected,
@@ -23,6 +21,8 @@ function Navbar() {
     trucksBtn,
     handleSelectedVehicle,
     handleSelectedLocation,
+    checkoutPage,
+    setCheckoutPage,
   } = useAppContext();
 
   // Function to handle navbar visibility
@@ -57,19 +57,23 @@ function Navbar() {
   // Function to handle form submission and navigate to checkout page
   const handleSubmit = (e) => {
     e.preventDefault();
-    choice && navigate("/checkout");
+    setCheckoutPage(true);
   };
 
   return (
     <>
       <div
-        className={`fixed left-0 right-0 max-w-screen-xl lg:px-4 mx-6 lg:mx-auto ${
+        className={`${
           isNavbarVisible
             ? "motion-preset-rebound-down"
             : "motion-blur-out-md motion-opacity-out-0"
+        } ${
+          checkoutPage
+            ? "hidden"
+            : "fixed left-0 right-0 max-w-screen-xl lg:px-4 mx-6 lg:mx-auto"
         }`}
       >
-        <div className="flex justify-between py-1 md:py-2 p-2 placeitem">
+        <div className="flex justify-between py-1 md:py-2 p-2">
           <Link to={"/"}>
             <span className="text-4xl font-bold text-orange-600">RentMe</span>
           </Link>
@@ -193,7 +197,7 @@ function Navbar() {
             <input
               type="submit"
               value="SELECT PICKUP"
-              className="bg-orange-600 w-full text-white rounded-lg p-2 text-2xl font-semibold mt-4 cursor-pointer active:scale-98"
+              className="bg-orange-600 w-full hover:brightness-110 text-white rounded-lg p-2 text-2xl font-semibold mt-4 cursor-pointer active:scale-98"
             />
           </form>
         </div>
