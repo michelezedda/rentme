@@ -17,7 +17,6 @@ This project is built using modern web technologies like React, Vite, and Tailwi
   - React
   - Tailwind CSS
   - Vite (for faster builds)
-  - react-hot-toast (for toast notifications)
   - react-router-dom (for page navigation)
   - react-icons (for UI icons)
   - Rombo (for smooth and performant animations)
