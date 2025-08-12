@@ -83,6 +83,6 @@ Make sure you have the following installed:
     
     ## Screenshots
 <div align="center">
- <img src="https://i.postimg.cc/bDnm47Rg/screencapture-rentme-demo-vercel-app-2025-08-12-19-35-17.png" width="800" />
+ <img src="https://www.canva.com/design/DAGv4nWgRY8/vF47xnqMSyLMKGvXAnH85A/view?utm_content=DAGv4nWgRY8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h702a44b465" width="800" />
     <img src="https://i.postimg.cc/GBH7x88Z/Screenshot-2025-08-12-193624.png" width="800" />
 </div>
