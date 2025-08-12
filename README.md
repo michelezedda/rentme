@@ -80,3 +80,7 @@ Make sure you have the following installed:
     ```bash
     yarn dev
     ```
+    
+    ## Screenshots
+  <img src="https://i.ibb.co/S4jtrgDr/screencapture-rentme-demo-vercel-app-2025-08-12-19-35-17.png">
+  <img src="https://i.ibb.co/MDPv1XJr/Screenshot-2025-08-12-193624.png">
