@@ -83,10 +83,10 @@ Make sure you have the following installed:
     
     ## Screenshots
 <div align="center">
-  <a href="https://postimg.cc/bDnm47Rg">
+  <a href="https://i.postimg.cc/bDnm47Rg/screencapture-rentme-demo-vercel-app-2025-08-12-19-35-17.png">
     <img src="https://i.postimg.cc/bDnm47Rg/screencapture-rentme-demo-vercel-app-2025-08-12-19-35-17.png" width="800" />
   </a>
-  <a href="https://postimg.cc/GBH7x88Z">
+  <a href="https://i.postimg.cc/GBH7x88Z/Screenshot-2025-08-12-193624.png">
     <img src="https://i.postimg.cc/GBH7x88Z/Screenshot-2025-08-12-193624.png" width="800" />
   </a>
 </div>
